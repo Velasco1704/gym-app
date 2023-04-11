@@ -1,0 +1,164 @@
+.servicios__container {
+  height: 100dvh;
+
+  .servicios__layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .servicios__h1 {
+      font-family: var(--tipo-secundaria);
+      color: var(--yellow);
+      font-size: 3em;
+    }
+
+    .servicios__layout__container {
+      padding: 1rem;
+      height: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .servicios__layout__servicio {
+        padding: 0.5rem;
+        background: var(--black);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        .servicio__img {
+          border: 0.2rem solid transparent;
+          border-radius: 50%;
+          width: 6rem;
+          height: 6rem;
+
+          &:hover {
+            border-color: var(--yellow);
+          }
+        }
+
+        .servicio__info {
+          text-align: center;
+
+          .servicio__info__h1 {
+            font-family: var(--tipo-secundaria);
+          }
+        }
+      }
+    }
+  }
+
+  .servicios__container__facilities {
+    padding: 1rem;
+    z-index: 0;
+
+    .servicio__facilities {
+      position: relative;
+
+      .servicio__facilities__info {
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        padding: .4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        text-align: center;
+        transition: .2s;
+        border: .2rem solid transparent;
+
+        &:hover {
+          transition: .2s;
+          background: rgba(0, 0, 0, 0.8);
+          border-color: var(--yellow);
+        }
+
+        .servicio__facilities__h1 {
+          font-family: var(--tipo-secundaria);
+          font-size: 7em;
+          color: var(--yellow);
+        }
+
+        .servicio__facilities__h2 {
+          font-family: var(--tipo-secundaria);
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .servicios__container {
+    height: 80dvh;
+
+    .servicios__layout {
+      .servicios__layout__container {
+        gap: 2rem;
+
+        .servicios__layout__servicio {
+          .servicio__img {
+            width: 7rem;
+            height: 7rem;
+          }
+
+          .servicio__info {
+            .servicio__info__h1 {
+              font-size: 2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .servicios__container {
+    margin: 0 auto;
+
+    .servicios__container__facilities {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .servicio__facilities {
+        .servicio__facilities__img {
+          height: 100%;
+        }
+
+        height: 427px;
+        max-width: 460px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .servicios__container {
+    .servicios__layout {
+      .servicios__h1 {
+        font-size: 8em;
+      }
+
+      .servicios__layout__container {
+        height: 30%;
+      }
+    }
+  }
+}

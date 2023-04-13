@@ -46,7 +46,7 @@ const Servicios = () => {
         </div>
       </div>
       <div className="servicios__container__facilities">
-        <div className="servicio__facilities servicio__square">
+        <div className="servicio__facilities ">
           <Image
             className="servicio__facilities__img"
             src={entrenamientoPlanta}
@@ -60,7 +60,7 @@ const Servicios = () => {
             </p>
           </div>
         </div>
-        <div className="servicio__facilities servicio__square">
+        <div className="servicio__facilities ">
           <Image
             className="servicio__facilities__img"
             src={cardio}
@@ -75,7 +75,7 @@ const Servicios = () => {
             </p>
           </div>
         </div>
-        <div className="servicio__facilities servicios__rectangle">
+        <div className="servicio__facilities">
           <Image
             className="servicio__facilities__img"
             src={estiramientoAbdomen}
@@ -90,7 +90,7 @@ const Servicios = () => {
             </p>
           </div>
         </div>
-        <div className="servicio__facilities servicio__square">
+        <div className="servicio__facilities ">
           <Image
             className="servicio__facilities__img"
             src={entrenamientoPersonalizado}
@@ -137,7 +137,7 @@ const Servicios = () => {
             </p>
           </div>
         </div>
-        <div className="servicio__facilities servicio__square">
+        <div className="servicio__facilities ">
           <Image
             className="servicio__facilities__img"
             src={phone}

@@ -1,0 +1,187 @@
+.clasesGrupales__container {
+  .clasesGrupales__header {
+    padding: 1rem;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    .clasesGrupales__header__h1 {
+      font-family: var(--tipo-secundaria);
+      font-size: 5em;
+      color: var(--yellow);
+    }
+
+    .clasesGrupales__header__p {
+      text-align: center;
+    }
+  }
+
+  .clasesGrupales__info {
+    height: 100dvh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .clasesGrupales__info__h1 {
+      font-family: var(--tipo-secundaria);
+      font-size: 3em;
+      color: var(--yellow);
+    }
+  }
+
+  .clasesGrupales__clases__layout {
+    .clasesGrupales__clase {
+      .clasesGrupales__clase__img {
+        height: 100%;
+      }
+
+      .clasesGrupales__clase__info {
+        padding: 0.5rem;
+        min-height: 18rem;
+        color: var(--black);
+        background: var(--white);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .clasesGrupales__clase__info__h1 {
+          font-family: var(--tipo-secundaria);
+          font-size: 3em;
+        }
+
+        .clasesGrupales__clase__info__button {
+          cursor: pointer;
+          font-family: var(--tipo-secundaria);
+          color: var(--yellow);
+          background: var(--black);
+          padding: 0.8rem;
+          border: 0.2rem solid transparent;
+          border-radius: 0.3rem;
+          transition: 0.2s;
+
+          &:hover {
+            transition: 0.2s;
+            border-color: var(--black);
+            background: var(--yellow);
+            color: var(--black);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .clasesGrupales__container {
+    .clasesGrupales__header {
+      height: 100dvh;
+
+      .clasesGrupales__header__h1 {
+        font-size: 6em;
+      }
+
+      .clasesGrupales__header__p {
+        font-size: 1.4em;
+      }
+    }
+
+    .clasesGrupales__info {
+      .clasesGrupales__info__h1 {
+        font-size: 4em;
+      }
+
+      .clasesGrupales__info__p {
+        font-size: 1.4em;
+      }
+    }
+
+    .clasesGrupales__clases__layout {
+      .clasesGrupales__clase {
+        .clasesGrupales__clase__info {
+          min-height: 24rem;
+          gap: 2rem;
+
+          .clasesGrupales__clase__info__h1 {
+            font-size: 4em;
+          }
+
+          .clasesGrupales__header__p {
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .clasesGrupales__container {
+    .clasesGrupales__header {
+      .clasesGrupales__header__h1 {
+        font-size: 7em;
+      }
+    }
+
+    .clasesGrupales__clases__layout {
+      .clasesGrupales__clase {
+        display: flex;
+
+        .clasesGrupales__clase__img {
+          width: 50%;
+        }
+
+        .clasesGrupales__clase__info {
+          width: 50%;
+        }
+      }
+
+      .clase__reverse {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .clasesGrupales__container {
+    .clasesGrupales__info {
+      .clasesGrupales__info__h1 {
+        font-size: 5em;
+      }
+
+      .clasesGrupales__info__p {
+        padding: 0 5rem;
+        font-size: 1.5em;
+      }
+    }
+
+    .clasesGrupales__clases__layout {
+      .clasesGrupales__clase {
+        .clasesGrupales__clase__info {
+          .clasesGrupales__clase__info__h1 {
+            font-size: 6em;
+          }
+
+          .clasesGrupales__clase__info__p {
+            font-size: 1.5em;
+          }
+
+          .clasesGrupales__clase__info__button {
+            margin-top: 1rem;
+            font-size: 2em;
+          }
+        }
+      }
+    }
+  }
+}

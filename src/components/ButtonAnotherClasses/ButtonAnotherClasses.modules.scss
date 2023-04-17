@@ -1,0 +1,24 @@
+.ButtonAnotherClasses__button {
+  cursor: pointer;
+  margin: 0 auto;
+  width: 12rem;
+  font-size: 1.3em;
+  font-family: var(--tipo-secundaria);
+  background: var(--yellow);
+  color: var(--black);
+  padding: .5rem 0;
+  border-radius: .2rem;
+  transition: .2s;
+
+  &:hover {
+    transition: .2s;
+    transform: translateY(-.2rem) translateX(.1rem);
+  }
+}
+
+@media (min-width: 1440px) {
+  .ButtonAnotherClasses__button {
+    font-size: 1.5em;
+    width: 14rem;
+  }
+}

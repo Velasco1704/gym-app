@@ -1,19 +1,19 @@
 "use client";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import bodyCombat from "@/assets/clases-grupales/body-combat.png";
-import cardioBox from "@/assets/clases-grupales/cardio-box.jpg";
-import dance from "@/assets/clases-grupales/dance.jpg";
-import funcional360 from "@/assets/clases-grupales/funcional-360.png";
-import gap from "@/assets/clases-grupales/gap.jpg";
-import grit from "@/assets/clases-grupales/grit.png";
-import hiit from "@/assets/clases-grupales/hiit.png";
-import suspension from "@/assets/clases-grupales/suspension.png";
-import superCore from "@/assets/clases-grupales/super-core.png";
-import tabata from "@/assets/clases-grupales/tabata.jpg";
-import yoga from "@/assets/clases-grupales/yoga.jpg";
-import pilates from "@/assets/clases-grupales/pilates.jpg";
-import starkEffect from "@/assets/clases-grupales/stark-effect.jpg";
+import bodyCombat from "@/assets/clases-grupales/body-combat/body-combat.png";
+import cardioBox from "@/assets/clases-grupales/cardio-box/cardio-box.jpg";
+import dance from "@/assets/clases-grupales/dance/dance.jpg";
+import funcional360 from "@/assets/clases-grupales/funcional360/funcional-360.png";
+import gap from "@/assets/clases-grupales/gap/gap.jpg";
+import grit from "@/assets/clases-grupales/grit/grit.png";
+import hiit from "@/assets/clases-grupales/hiit/hiit.png";
+import suspension from "@/assets/clases-grupales/suspension/suspension.png";
+import superCore from "@/assets/clases-grupales/super-core/super-core.png";
+import tabata from "@/assets/clases-grupales/tabata/tabata.jpg";
+import yoga from "@/assets/clases-grupales/yoga/yoga.jpg";
+import pilates from "@/assets/clases-grupales/pilates/pilates.jpg";
+import starkEffect from "@/assets/clases-grupales/stark-effect/stark-effect.jpg";
 import "@/styles/ClasesGrupales.modules.scss";
 
 const clasesGrupales = () => {

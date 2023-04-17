@@ -1,0 +1,201 @@
+.ClassesInfo__container {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+
+  .ClassesInfo__info {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    .ClassesInfo__header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      .ClassesInfo__header__h1 {
+        font-family: var(--tipo-secundaria);
+        color: var(--yellow);
+        font-size: 4.3em;
+      }
+
+      .ClassesInfo__header__p {
+        font-size: 1.1em;
+      }
+    }
+
+    .ClassesInfo__beneficios {
+      width: 100%;
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: .5rem;
+
+      .ClassesInfo__beneficios__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .ClassesInfo__beneficios__h3 {
+          font-size: 1.1em;
+          font-family: var(--tipo-secundaria);
+        }
+
+        .ClassesInfo__beneficios__img {
+          width: 6.25rem;
+          height: 6.25rem;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .ClassesInfo__extra__info {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    .ClassesInfo__extra__info__layout {
+      font-size: 1.2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      .ClassesInfo__extra__info__p {
+        max-width: 32rem;
+      }
+
+      .ClassesInfo__extra__info__beneficios {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .beneficios__info {
+          .beneficios__info__h3 {
+            font-family: var(--tipo-secundaria);
+            color: var(--yellow);
+            font-size: 2em;
+          }
+
+          .beneficios__info__p {
+            font-family: var(--tipo-secundaria);
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+
+    .ClassesInfo__extra__info__container__img {
+      height: 30rem;
+      position: relative;
+      border-radius: .2rem;
+
+      &::before {
+        content: "";
+        background: var(--yellow);
+        position: absolute;
+        border-radius: inherit;
+        width: 100%;
+        height: 100%;
+        bottom: .5rem;
+        left: .5rem;
+        z-index: -1;
+      }
+
+      .ClassesInfo__extra__info__img {
+        height: 100%;
+        border-radius: inherit;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ClassesInfo__container {
+    .ClassesInfo__info {
+      height: 65dvh;
+
+      .ClassesInfo__header {
+        .ClassesInfo__header__h1 {
+          font-size: 6em;
+        }
+
+        .ClassesInfo__header__p {
+          font-size: 1.5em;
+        }
+      }
+
+      .ClassesInfo__beneficios {
+        .ClassesInfo__beneficios__container {
+          .ClassesInfo__beneficios__h3 {
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+
+    .ClassesInfo__extra__info {
+      .ClassesInfo__extra__info__container__img {
+        &::before {
+          bottom: 1rem;
+          left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .ClassesInfo__container {
+    .ClassesInfo__extra__info {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .ClassesInfo__container {
+    .ClassesInfo__info {
+      .ClassesInfo__beneficios {
+        justify-content: center;
+        gap: 10rem;
+
+        .ClassesInfo__beneficios__container {
+          .ClassesInfo__beneficios__h3 {
+            font-size: 1.8em;
+          }
+        }
+      }
+
+    }
+
+    .ClassesInfo__extra__info {
+      justify-content: space-evenly;
+
+      .ClassesInfo__extra__info__layout {
+        .ClassesInfo__extra__info__p {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}

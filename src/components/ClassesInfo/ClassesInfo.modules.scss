@@ -49,6 +49,7 @@
         gap: 1rem;
 
         .ClassesInfo__beneficios__h3 {
+          color: var(--yellow);
           font-size: 1.1em;
           font-family: var(--tipo-secundaria);
         }
@@ -181,11 +182,10 @@
 
         .ClassesInfo__beneficios__container {
           .ClassesInfo__beneficios__h3 {
-            font-size: 1.8em;
+            font-size: 2em;
           }
         }
       }
-
     }
 
     .ClassesInfo__extra__info {

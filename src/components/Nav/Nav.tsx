@@ -22,9 +22,6 @@ export const Nav = () => {
         <li className="nav__li">
           <Link href="/clases-grupales">Clases Grupales</Link>
         </li>
-        <li className="nav__li">
-          <Link href="/login">Login</Link>
-        </li>
       </ul>
     </nav>
   );

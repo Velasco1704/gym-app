@@ -1,1 +1,11 @@
 @use './reset';
+
+body::-webkit-scrollbar {
+  background: var(--black);
+  width: .3rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+  border-radius: .2rem;
+}

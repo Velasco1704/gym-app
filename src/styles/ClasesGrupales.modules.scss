@@ -154,6 +154,12 @@
 
 @media (min-width: 1440px) {
   .clasesGrupales__container {
+    .clasesGrupales__header {
+      .clasesGrupales__header__h1 {
+        font-size: 8em;
+      }
+    }
+
     .clasesGrupales__info {
       .clasesGrupales__info__h1 {
         font-size: 5em;
